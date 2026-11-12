@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | City Central Library</title>
+<meta name="description" content="About Us - Library Book Reservation System">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+<header class="site-header" id="site-header"></header>
+<main>
+
+<section class="page-banner"><div class="container"><h1>About Us</h1><p>Knowledge for everyone, everywhere on campus</p></div></section>
+<section class="section"><div class="container two-col">
+  <div><h2>Our Library</h2><p style="margin:12px 0">City Central Library was founded to give every student easy access to quality books, journals and digital resources. With a growing collection across programming, artificial intelligence, data science, mathematics and literature, we support learning, research and imagination.</p>
+  <p>Our online reservation system lets students check availability and reserve books from anywhere, saving time and making sure the right book is waiting at the desk.</p></div>
+  <div class="card"><h3><i class="fa-solid fa-bullseye"></i> Mission</h3><p style="margin:6px 0 16px">To provide fast, fair and friendly access to knowledge so every student can learn, grow and succeed.</p>
+  <h3><i class="fa-solid fa-eye"></i> Vision</h3><p style="margin-top:6px">To be a leading smart campus library that blends a rich book collection with seamless digital services.</p></div>
+</div></section>
+<section class="section" style="background:var(--light)"><div class="container">
+  <div class="section-title"><h2>Library Facilities</h2></div>
+  <div class="feature-grid">
+    <div class="feature"><i class="fa-solid fa-book-open-reader"></i><h3>Reading Halls</h3><p>Quiet, air-conditioned halls with 300+ seats.</p></div>
+    <div class="feature"><i class="fa-solid fa-wifi"></i><h3>Free Wi-Fi</h3><p>High-speed internet throughout the library.</p></div>
+    <div class="feature"><i class="fa-solid fa-computer"></i><h3>Digital Lab</h3><p>Computers with e-journals and online databases.</p></div>
+    <div class="feature"><i class="fa-solid fa-users"></i><h3>Discussion Rooms</h3><p>Bookable rooms for group study and projects.</p></div>
+    <div class="feature"><i class="fa-solid fa-print"></i><h3>Print &amp; Scan</h3><p>Affordable printing, scanning and photocopying.</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="container two-col">
+  <div class="card"><h3 style="margin-bottom:10px"><i class="fa-regular fa-clock"></i> Opening Hours</h3>
+    <table class="hours"><tr><td>Monday - Friday</td><td>8:00 AM - 8:00 PM</td></tr><tr><td>Saturday</td><td>9:00 AM - 5:00 PM</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table>
+    <h3 style="margin:24px 0 10px"><i class="fa-solid fa-address-book"></i> Contact Details</h3>
+    <ul class="contact-list"><li><i class="fa-solid fa-location-dot"></i> Lovely Professional University, Phagwara, Punjab, India</li><li><i class="fa-solid fa-phone"></i> +91 925 123 4567</li><li><i class="fa-solid fa-envelope"></i> library@lpu.edu</li></ul></div>
+  <div class="card"><h3 style="margin-bottom:12px"><i class="fa-solid fa-comment-dots"></i> Send Feedback</h3>
+    <form id="feedback-form" novalidate>
+      <div class="field"><label for="fb-name">Name</label><input id="fb-name" name="fullName"><small class="error"></small></div>
+      <div class="field"><label for="fb-email">Email</label><input id="fb-email" name="email" type="email"><small class="error"></small></div>
+      <div class="field"><label for="fb-rating">Rating</label><select id="fb-rating" name="rating"><option value="">-- Select --</option><option>5 - Excellent</option><option>4 - Good</option><option>3 - Average</option><option>2 - Poor</option><option>1 - Very Poor</option></select><small class="error"></small></div>
+      <div class="field"><label for="fb-msg">Message</label><textarea id="fb-msg" name="message" rows="4" placeholder="Tell us how we can improve..."></textarea><small class="error"></small></div>
+      <button class="btn btn-primary btn-block" type="submit" style="margin-top:8px">Submit Feedback</button>
+    </form></div>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login / Register | City Central Library</title>
+<meta name="description" content="Login / Register - Library Book Reservation System">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+<header class="site-header" id="site-header"></header>
+<main>
+
+<section class="section"><div class="container"><div class="auth-wrap card">
+  <div style="text-align:center;margin-bottom:18px"><img src="images/logo.svg" alt="" style="width:56px;margin:auto"><h2 style="margin-top:8px">Welcome to the Library</h2></div>
+  <div class="auth-tabs"><button class="active" data-tab="login" type="button">Login</button><button data-tab="register" type="button">Register</button></div>
+  <form id="login-form" novalidate>
+    <div class="field"><label for="l-email">Email</label><input id="l-email" name="email" type="email" placeholder="you@example.com" autocomplete="email"><small class="error"></small></div>
+    <div class="field"><label for="l-pass">Password</label><input id="l-pass" name="password" type="password" placeholder="Your password" autocomplete="current-password"><small class="error"></small></div>
+    <button class="btn btn-primary btn-block" type="submit" style="margin-top:10px">Login</button>
+  </form>
+  <form id="register-form" class="hidden" novalidate>
+    <div class="field"><label for="r-name">Full Name</label><input id="r-name" name="fullName" placeholder="Your full name"><small class="error"></small></div>
+    <div class="field"><label for="r-reg">Student Registration Number</label><input id="r-reg" name="regNo" placeholder="e.g. 12345678" maxlength="15"><small class="error"></small></div>
+    <div class="field"><label for="r-email">Email</label><input id="r-email" name="email" type="email" placeholder="you@example.com"><small class="error"></small></div>
+    <div class="field"><label for="r-pass">Password</label><input id="r-pass" name="password" type="password" placeholder="Min 6 characters" autocomplete="new-password"><small class="error"></small></div>
+    <div class="field"><label for="r-conf">Confirm Password</label><input id="r-conf" name="confirm" type="password" placeholder="Re-enter password" autocomplete="new-password"><small class="error"></small></div>
+    <button class="btn btn-primary btn-block" type="submit" style="margin-top:10px">Create Account</button>
+  </form>
+  <p class="note"><i class="fa-solid fa-circle-info"></i> Demo only: accounts are saved in your browser's LocalStorage, not on a server.</p>
+</div></div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

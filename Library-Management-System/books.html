@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse Books | City Central Library</title>
+<meta name="description" content="Browse Books - Library Book Reservation System">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="books">
+<header class="site-header" id="site-header"></header>
+<main>
+
+<section class="page-banner"><div class="container"><h1>Book Catalogue</h1><p>Search, filter and reserve from our collection</p></div></section>
+<section class="section" style="padding-top:36px"><div class="container">
+  <div class="toolbar">
+    <input type="search" id="f-search" placeholder="Search title or author..." aria-label="Search books">
+    <select id="f-cat" aria-label="Category"><option value="all">All Categories</option></select>
+    <select id="f-avail" aria-label="Availability"><option value="all">All Availability</option><option value="available">Available</option><option value="unavailable">Unavailable</option></select>
+    <select id="f-sort" aria-label="Sort"><option value="az">Title: A to Z</option><option value="za">Title: Z to A</option></select>
+    <button class="btn btn-outline" id="f-reset" type="button"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+  </div>
+  <p class="result-info" id="result-info"></p>
+  <div class="book-grid" id="book-grid"></div>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/script.js"></script>
+<script src="js/books.js"></script>
+</body>
+</html>

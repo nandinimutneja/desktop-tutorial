@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reserve a Book | City Central Library</title>
+<meta name="description" content="Reserve a Book - Library Book Reservation System">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reservation">
+<header class="site-header" id="site-header"></header>
+<main>
+
+<section class="page-banner"><div class="container"><h1>Reserve a Book</h1><p>Fill in the form to reserve your book in under a minute</p></div></section>
+<section class="section"><div class="container narrow"><div class="card" id="res-box">
+  <h2 style="margin-bottom:6px">Reservation Details</h2>
+  <p class="author" style="margin-bottom:20px">All fields are required. Maximum loan period is 30 days.</p>
+  <form id="res-form" novalidate>
+    <div class="form-grid">
+      <div class="field"><label for="studentName">Student Name</label><input id="studentName" name="studentName" placeholder="e.g. Aarav Sharma"><small class="error"></small></div>
+      <div class="field"><label for="regNo">Registration Number</label><input id="regNo" name="regNo" placeholder="e.g. 12345678" maxlength="15"><small class="error"></small></div>
+      <div class="field full"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="you@example.com"><small class="error"></small></div>
+      <div class="field full"><label for="bookId">Book Title</label><select id="bookId" name="bookId"></select><small class="error"></small></div>
+      <div id="avail-msg" class="avail-msg" style="grid-column:1/-1"></div>
+      <div class="field"><label for="resDate">Reservation Date</label><input id="resDate" name="resDate" type="date"><small class="error"></small></div>
+      <div class="field"><label for="returnDate">Expected Return Date</label><input id="returnDate" name="returnDate" type="date"><small class="error"></small></div>
+    </div>
+    <button class="btn btn-primary btn-block" type="submit" style="margin-top:14px"><i class="fa-solid fa-bookmark"></i> Confirm Reservation</button>
+  </form>
+</div></div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/script.js"></script>
+<script src="js/reservation.js"></script>
+</body>
+</html>

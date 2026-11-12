@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | LPU CENTRAL LIBRARY</title>
+<meta name="description" content="Home - Library Book Reservation System">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<header class="site-header" id="site-header"></header>
+<main>
+
+<section class="hero"><div class="container">
+  <h1>Discover Your Next Favourite Book</h1>
+  <p>LPU Central Library brings thousands of titles to your fingertips. Search the catalogue, reserve your books online and pick them up at the desk &mdash; simple, fast and free for every student.</p>
+  <a href="books.html" class="btn btn-light"><i class="fa-solid fa-magnifying-glass"></i> Search Books</a>
+</div></section>
+
+<section class="search-wrap"><div class="container">
+  <form class="search-box" id="home-search" role="search">
+    <input type="search" id="home-q" placeholder="Search by book title or author..." aria-label="Search books">
+    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+  </form>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-title"><h2>Featured Books</h2><p>Hand-picked titles loved by our students</p></div>
+  <div class="book-grid" id="featured-grid"></div>
+  <p style="text-align:center;margin-top:30px"><a href="books.html" class="btn btn-outline">View Full Catalogue <i class="fa-solid fa-arrow-right"></i></a></p>
+</div></section>
+
+<section class="section stats"><div class="container stats-grid">
+  <div class="stat"><i class="fa-solid fa-book"></i><strong data-stat="books">0</strong><span>Total Books</span></div>
+  <div class="stat"><i class="fa-solid fa-circle-check"></i><strong data-stat="available">0</strong><span>Available Books</span></div>
+  <div class="stat"><i class="fa-solid fa-user-graduate"></i><strong data-stat="students">0</strong><span>Registered Students</span></div>
+  <div class="stat"><i class="fa-solid fa-bookmark"></i><strong data-stat="reservations">0</strong><span>Total Reservations</span></div>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
